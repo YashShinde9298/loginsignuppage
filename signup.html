@@ -19,18 +19,20 @@
         </div>
         <div class="inputdiv">
             <i class="fa-solid fa-envelope icons"></i>
-            <input type="text" placeholder="Email" class="inputfields"><br />
+            <input type="text" placeholder="Email" class="inputfields" id="email"><br />
         </div>
         <div class="inputdiv">
             <i class="fa-solid fa-lock icons"></i>
-            <input type="password" placeholder="Password" class="inputfields"><br />
+            <input type="password" placeholder="Password" class="inputfields" id="signupPwd"><span id="toggle"><i
+                    class="fa-regular fa-eye-slash" onclick="togglePwd()"></i></span><br />
         </div>
         <div class="inputdiv">
             <i class="fa-solid fa-lock icons"></i>
-            <input type="password" placeholder="Confirm Password" class="inputfields">
+            <input type="password" placeholder="Confirm Password" class="inputfields" id="confirmPwd"><span
+                id="toggle1"><i class="fa-regular fa-eye-slash" onclick="toggleCPwd()"></i></span>
         </div>
 
-        <button class="btn">SIGN UP</button>
+        <button class="btn" onclick="checkEveryThing()">SIGN UP</button>
         <hr>
         <a href="./index.html" class="link">Already user? Click here to Log in </a>
         <p class="signinopt">or sign up with :</p>
@@ -46,6 +48,8 @@
             </div>
         </div>
     </div>
+
+    <script src="./index.js"></script>
 </body>
 
 </html>

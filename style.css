@@ -138,3 +138,24 @@ a:hover {
     background-image: linear-gradient(to bottom right, rgba(152, 0, 171, 1) 0%, rgba(211, 0, 247, 1) 30%, rgba(249, 0, 0, 1) 47%, rgba(241, 255, 0, 1) 100%);
     cursor: pointer;
 }
+
+#toggle {
+    color: white;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-left: 5px;
+}
+
+#toggle1 {
+    color: white;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-left: 5px;
+}
+
+#togglebtn {
+    color: white;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-left: 5px;
+}
