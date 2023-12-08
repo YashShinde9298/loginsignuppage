@@ -49,6 +49,29 @@
         </div>
     </div>
 
+    <div class="emailPopup" id="emailPopup">
+        <h2>Email is invalid!</h2>
+        <li>Please make sure it does not contain capital letters, includes at least 2 letters and 3
+            numbers</li>
+        <li>Only includes @ as the symbol</li>
+        <li>Has a valid domain name (gmail.com), and ends with gmail.com.</li>
+        <button type="button" onclick="closeEmail()">OK</button>
+    </div>
+
+
+    <div class="passwordPopup" id="passwordPopup">
+        <h2>Password is invalid!</h2>
+        <li>Please make sure it includes at least 1 capital letter, minimum 4 letters , minimum 2 numbers</li>
+        <li>Only one symbol (@, $, !, ^, or *)</li>
+        <li>At least 8 characters long</li>
+        <button type="button" onclick="closePassword()">OK</button>
+    </div>
+
+    <div class="cPasswordPopup" id="cPasswordPopup">
+        <h2>Password not matched</h2>
+        <button type="button" onclick="closeCPassword()">OK</button>
+    </div>
+
     <script src="./index.js"></script>
 </body>
 

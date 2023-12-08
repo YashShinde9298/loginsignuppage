@@ -25,12 +25,17 @@
         </div>
 
 
-        <button class="btn">Log In</button>
+        <button class="btn" onclick="openLoginPopup()">Log In</button>
         <hr>
         <a href="./Login.html" class="link">Forgot Password?</a><br />
         <br />
         <a href="./signup.html" class="link">Not a user? Click here to Sign up </a>
 
+    </div>
+
+    <div class="loginPopup" id="loginPopup">
+        <h2>You're Logged in Successfully!</h2>
+        <button type="button" onclick="closeLoginPop()">OK</button>
     </div>
 
     <script src="index.js"></script>

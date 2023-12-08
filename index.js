@@ -6,9 +6,14 @@ let toggle = document.getElementById('toggle');
 let toggle1 = document.getElementById('toggle1');
 let toggleBtn = document.getElementById('togglebtn');
 let signinPwd = document.getElementById('signinPwd');
+let loginPopup = document.getElementById('loginPopup');
+let emailPopup = document.getElementById('emailPopup');
+let passwordPopup = document.getElementById('passwordPopup');
+let cPasswordPopup = document.getElementById('cPasswordPopup');
 
 let emailChecked = false;
 let pwdChecked = false;
+let cPwdChecked = false;
 
 function checkPassword() {
     const pattern = /^(?=.*[A-Z])(?=.*[a-z]{3,})(?=.*\d{2,})(?=.*[@$!^*]).{8,}$/;
@@ -18,17 +23,17 @@ function checkPassword() {
         matchPassword();
     }
     else {
-        alert("Password is invalid. Please make sure it includes at least 1 capital letter, minimum 4 letters, only one symbol (@, $, !, ^, or *), minimum 2 numbers, and is at least 8 characters long.")
+        passwordPopup.classList.add('open-passwordPopup');
     }
 }
 
 function matchPassword() {
     console.log(confirmPwd.value)
     if (pwd.value === confirmPwd.value) {
-
+        cPwdChecked = true;
     }
     else {
-        alert("Password not matched");
+        cPasswordPopup.classList.add('open-cPasswordPopup');
     }
 }
 
@@ -40,17 +45,16 @@ function checkEmail() {
         emailChecked = true;
     }
     else {
-        alert("Email is invalid. Please make sure it does not contain capital letters, includes at least 2 letters and 3 numbers, only includes @ as the symbol, has a valid domain name (gmail.com), and ends with gmail.com.")
+        emailPopup.classList.add("open-emailPopup");
     }
 }
 
 function checkEveryThing() {
     checkEmail();
     checkPassword();
-    if (emailChecked == true && pwdChecked == true) {
+    if (emailChecked == true && pwdChecked == true && cPwdChecked == true) {
         window.location.href = "index.html"
     }
-
 }
 
 
@@ -85,4 +89,25 @@ function toggleSPwd() {
         signinPwd.type = "password"
         toggleBtn.innerHTML = `<i class="fa-regular fa-eye-slash"  onclick="toggleSPwd()">`
     }
+}
+
+function openLoginPopup() {
+    loginPopup.classList.add('open-loginPopup');
+}
+
+function closeLoginPop() {
+    loginPopup.classList.remove('open-loginPopup');
+
+}
+
+function closeEmail() {
+    emailPopup.classList.remove("open-emailPopup");
+}
+
+function closePassword() {
+    passwordPopup.classList.remove('open-passwordPopup');
+}
+
+function closeCPassword() {
+    cPasswordPopup.classList.remove('open-cPasswordPopup');
 }

@@ -13,7 +13,7 @@ body {
     width: 450px;
     border-radius: 9px;
     margin-top: 75px;
-    margin-left: 600px;
+    margin-left: 535px;
     background-color: rgba(148, 148, 148, 0.556);
     backdrop-filter: blur(3px);
     text-align: center;
@@ -25,7 +25,7 @@ body {
     width: 450px;
     border-radius: 9px;
     margin-top: 175px;
-    margin-left: 600px;
+    margin-left: 535px;
     background-color: rgba(148, 148, 148, 0.556);
     backdrop-filter: blur(3px);
     text-align: center;
@@ -158,4 +158,184 @@ a:hover {
     font-size: 20px;
     margin-top: 10px;
     margin-left: 5px;
+}
+
+
+.loginPopup {
+    width: 400px;
+    background: white;
+    border-radius: 6px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.1);
+    text-align: center;
+    padding: 0 30px 30px;
+    color: #333;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+}
+
+.loginPopup h2 {
+    font-size: 38px;
+    font-weight: 500;
+    margin: 30px 0 10px;
+}
+
+.loginPopup button {
+    width: 100%;
+    margin-top: 50px;
+    padding: 10px 0;
+    background-color: #6fd649;
+    color: #fff;
+    border: 0;
+    outline: none;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.open-loginPopup {
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.emailPopup {
+    width: 400px;
+    background: white;
+    border-radius: 6px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.1);
+    text-align: justify;
+    padding: 0 30px 30px;
+    color: red;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+}
+
+.emailPopup li {
+    font-size: 20px;
+    font-weight: 500;
+    margin: 30px 0 10px;
+}
+
+.emailPopup h2 {
+    color: black;
+    font-size: 30px;
+    margin: 30px 0 10px;
+
+}
+
+.emailPopup button {
+    width: 100%;
+    margin-top: 50px;
+    padding: 10px 0;
+    background-color: red;
+    color: #fff;
+    border: 0;
+    outline: none;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.open-emailPopup {
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+
+.passwordPopup {
+    width: 400px;
+    background: white;
+    border-radius: 6px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.1);
+    text-align: justify;
+    padding: 0 30px 30px;
+    color: red;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+}
+
+.passwordPopup li {
+    font-size: 20px;
+    font-weight: 500;
+    margin: 30px 0 10px;
+}
+
+.passwordPopup h2 {
+    color: black;
+    font-size: 30px;
+    margin: 30px 0 10px;
+}
+
+.passwordPopup button {
+    width: 100%;
+    margin-top: 50px;
+    padding: 10px 0;
+    background-color: red;
+    color: #fff;
+    border: 0;
+    outline: none;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.open-passwordPopup {
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.cPasswordPopup {
+    width: 400px;
+    background: white;
+    border-radius: 6px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.1);
+    text-align: justify;
+    padding: 0 30px 30px;
+    color: red;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+}
+
+.cPasswordPopup h2 {
+    color: red;
+    font-size: 30px;
+    margin: 30px 0 10px;
+}
+
+
+.cPasswordPopup button {
+    width: 100%;
+    margin-top: 50px;
+    padding: 10px 0;
+    background-color: red;
+    color: #fff;
+    border: 0;
+    outline: none;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.open-cPasswordPopup {
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1);
 }
